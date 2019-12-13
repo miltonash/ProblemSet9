@@ -31,7 +31,7 @@ def solve_tp(g_n_path, omega_S_preTP, rho_s, imm_rates_path, params):
         r_path = firm.get_r(L_ss, r_params)
         w_path = firm.get_w(L_ss, w_params)
         bmat = np.zeros((S - 1, T + S - 1))
-        bmat[:, 0] = b_1
+        bmat[:, 0] = b_11
 
         # Solve for households
         for p in range(2, S):
